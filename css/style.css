@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 aside {
     position: fixed;
     text-align: center;
@@ -11,14 +16,22 @@ aside {
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: #000000 solid 1px; 
     writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
-.navigation {
-    padding-left: 2.5%;
+.navigation-item {
+    color: #000000;
+    opacity: 0.7;
+    display: block;
+    padding-bottom: 15px;
+    text-decoration: none;
 }
 
-body {
-    margin: 0;
+.navigation-item:hover {
+    color: #474646;
 }
 
 .screen {
@@ -26,6 +39,7 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 2px;
+    position: relative;
 }
 
 .screen:hover .screen-content {
@@ -36,31 +50,18 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-aside a{
-    text-decoration: overline;
-    padding-top: 20px;
-    color: #000000;
-    opacity: 0.7;
-}
-
-aside a:hover {
-    color: #474646;
-}
-
 .screen-content {
-    display: inline-block;
+    display: block;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     color:rgba(255, 255, 255, 0.8);
     opacity: 0.7;
     width: 440px;
     height: auto;
-    margin-top: 1%;
-    margin-left: 70%;
-    padding: 25px;
-    padding-bottom: 44px;
     border-radius: 15% 0px 15% 0px;
-    vertical-align: middle;
-    overflow: hidden;
+    right: 25px;
+    top: 125px;
+    padding: 15px;
     transition: transform 1.5s;
 }
 
@@ -74,4 +75,25 @@ aside a:hover {
 
 .screen-content ul {
     margin: 0;
+}
+
+@media(max-width: 500px){
+    .screen-content {
+        border-radius: 0;
+        box-sizing:border-box;
+        padding: 15px;
+        width: 100%;
+        right: inherit;
+        top: inherit;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .screen:hover .screen-content {
+        transform: none;
+    }
+
+    aside {
+        display: none;
+    }
 }
