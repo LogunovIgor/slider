@@ -1,77 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Ferrari 488 | Ferrari Store</title>
-    </head>
-    <body>
-        <main>
-            <aside>
-                    <a class="navigation-item" href="#screen-1">Об автомобиле</a>
-                    <a class="navigation-item" href="#screen-2">Технические характеристики</a>
-                    <a class="navigation-item" href="#screen-3">Инновации</a>
-                    <a class="navigation-item" href="#screen-4">Интерьер</a>
-                    <a class="navigation-item" href="#screen-5">Экстерьер</a>
-            </aside>
-            <div id="screen-1" class="screen" style="background-image: url('img/1.webp');">
-                <div class="screen-content">
-                    <h1>Ferrari 488 Pista</h1>
-                    <span>Новый автомобиль  , представленный 6 марта 2018 года на Женевском автосалоне, является наследником специальных серий автомобилей Ferrari с V-образным 8-цилиндровым двигателем – 360 Challenge Stradale, 430 Scuderia и 458 Speciale, - признанными как лучшие гоночные купе, адаптированные для дорог общего пользования. 
-                        Ferrari 488 Pista – технологический скачок вперед по сравнению с предшественниками с точки зрения спортивной динамики и мощности.
-                    </span>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Ferrari 488 | Ferrari Store</title>
+</head>
+
+<body>
+    <main>
+        <aside class="long-weight-menu">
+            <a class="navigation-item" href="#screen-1">Об автомобиле</a>
+            <a class="navigation-item" href="#screen-2">Технические характеристики</a>
+            <a class="navigation-item" href="#screen-3">Инновации</a>
+            <a class="navigation-item" href="#screen-4">Интерьер</a>
+            <a class="navigation-item" href="#screen-5">Экстерьер</a>
+        </aside>
+        <aside class="small-weight-menu">
+            <div class="small-weight-menu-action-panel">
+                <span class="open-hamburger" onclick="ShowOverlayMenu()">&#9776;</span>
+                <span class="close-hamburger" onclick="HideOverlayMenu()">&#65794;</span>
+            </div>
+            <div class="overlay-menu">
+                <div class="overlay-menu-item-container">
+                    <a class="overlay-menu-item" href="#screen-1" onclick="HideOverlayMenu()">Об автомобиле</a>
+                </div>
+                <div class="overlay-menu-item-container">
+                    <a class="overlay-menu-item" href="#screen-2" onclick="HideOverlayMenu()">Технические характеристики</a>
+                </div>
+                <div class="overlay-menu-item-container">
+                    <a class="overlay-menu-item" href="#screen-3" onclick="HideOverlayMenu()">Инновации</a>
+                </div>
+                <div class="overlay-menu-item-container">
+                    <a class="overlay-menu-item" href="#screen-4" onclick="HideOverlayMenu()">Интерьер</a>
+                </div>
+                <div class="overlay-menu-item-container">
+                    <a class="overlay-menu-item" href="#screen-5" onclick="HideOverlayMenu()">Экстерьер</a>
                 </div>
             </div>
-            <div id="screen-2" class="screen" style="background-image: url('img/2.webp');">
-                <div class="screen-content">
-                    <h1>Технические характеристики</h1>
-                    <ul>
-                        <li>Тип - V8 90<sup>o</sup> twin turbo.</li>
-                        <li>Рабочий объём - 3902 см3</li>
-                        <li>Максимальная мощность - 530 КВт (720 л/с) при 8000 об/мин</li>
-                        <li>Максимальный крутящий момент - 770 Нм при 3000 об/мин</li>
-                    </ul>
-                </div>
+        </aside>
+        <div id="screen-1" class="screen" style="background-image: url('img/1.webp');">
+            <div class="screen-content">
+                <h1>Ferrari 488 Pista</h1>
+                <span>Новый автомобиль , представленный 6 марта 2018 года на Женевском автосалоне, является наследником
+                    специальных серий автомобилей Ferrari с V-образным 8-цилиндровым двигателем – 360 Challenge
+                    Stradale, 430 Scuderia и 458 Speciale, - признанными как лучшие гоночные купе, адаптированные для
+                    дорог общего пользования.
+                    Ferrari 488 Pista – технологический скачок вперед по сравнению с предшественниками с точки зрения
+                    спортивной динамики и мощности.
+                </span>
             </div>
-            <div id="screen-3" class="screen" style="background-image: url('img/3.webp');">
-                <div class="screen-content">
-                    <h1>Инновации</h1>
-                    <span>Новый принцип переключения передач в режиме RACE наделяет автомобиль гораздо более 
-                        спортивным характером, практически превращая его в гоночный болид. 
-                        Иными словами, Ferrari 488 Pista дарит водителям с 
-                        любым уровнем подготовки исключительный и вдохновляющий опыт, 
-                        обычно доступный только пилотам гоночных автомобилей, 
-                        представляя собой новый эталон модельного ряда Ferrari с точки зрения удовольствия от вождения.
-                    </span>
-                </div>
+        </div>
+        <div id="screen-2" class="screen" style="background-image: url('img/2.webp');">
+            <div class="screen-content">
+                <h1>Технические характеристики</h1>
+                <ul>
+                    <li>Тип - V8 90<sup>o</sup> twin turbo.</li>
+                    <li>Рабочий объём - 3902 см3</li>
+                    <li>Максимальная мощность - 530 КВт (720 л/с) при 8000 об/мин</li>
+                    <li>Максимальный крутящий момент - 770 Нм при 3000 об/мин</li>
+                </ul>
             </div>
-            <div id="screen-4" class="screen" style="background-image: url('img/4.webp');">
-                <div class="screen-content">
-                    <h1>Интерьер</h1>
-                    <span>Интерьер модели, освобожденный от лишних элементов, 
-                        напоминает кабину гоночного автомобиля. 
-                        Широкое использование легких материалов, таких как углепластик и алькантара, 
-                        великолепно гармонирует с тщательностью исполнения и утонченностью, 
-                        характерными для интерьеров всех моделей Ferrari. 
-                        Ярким примером служит выполненная вручную контрастная прострочка, 
-                        алюминиевые накладки на пороги и площадка для левой ноги с рисунком в виде треугольников, 
-                        а также изящные скульптурные линии панелей дверей.
-                    </span>
-                </div>
+        </div>
+        <div id="screen-3" class="screen" style="background-image: url('img/3.webp');">
+            <div class="screen-content">
+                <h1>Инновации</h1>
+                <span>Новый принцип переключения передач в режиме RACE наделяет автомобиль гораздо более
+                    спортивным характером, практически превращая его в гоночный болид.
+                    Иными словами, Ferrari 488 Pista дарит водителям с
+                    любым уровнем подготовки исключительный и вдохновляющий опыт,
+                    обычно доступный только пилотам гоночных автомобилей,
+                    представляя собой новый эталон модельного ряда Ferrari с точки зрения удовольствия от вождения.
+                </span>
             </div>
-            <div id="screen-5" class="screen" style="background-image: url('img/5.webp');">
-                <div class="screen-content">
-                    <h1>Экстерьер</h1>
-                    <span>Основное направление работы команды Центра дизайна Ferrari над обликом новой модели 
-                        было обусловлено в первую очередь требованиями к аэродинамической эффективности.
-                        Дизайнеры использовали инновационные технические решения, 
-                        такие как воздуховод S-Duct в передней части, как способ сделать переднюю часть автомобиля 
-                        визуально короче, создав оригинальный эффект парящего крыла. 
-                        Черная П-образная кромка переднего бампера и боковые поверхности напоминают 
-                        о выразительных аэродинамических мотивах нижней части кузова модели 488 GTE.
-                    </span>
-                </div>
+        </div>
+        <div id="screen-4" class="screen" style="background-image: url('img/4.webp');">
+            <div class="screen-content">
+                <h1>Интерьер</h1>
+                <span>Интерьер модели, освобожденный от лишних элементов,
+                    напоминает кабину гоночного автомобиля.
+                    Широкое использование легких материалов, таких как углепластик и алькантара,
+                    великолепно гармонирует с тщательностью исполнения и утонченностью,
+                    характерными для интерьеров всех моделей Ferrari.
+                    Ярким примером служит выполненная вручную контрастная прострочка,
+                    алюминиевые накладки на пороги и площадка для левой ноги с рисунком в виде треугольников,
+                    а также изящные скульптурные линии панелей дверей.
+                </span>
             </div>
-        </main>
-    </body>
+        </div>
+        <div id="screen-5" class="screen" style="background-image: url('img/5.webp');">
+            <div class="screen-content">
+                <h1>Экстерьер</h1>
+                <span>Основное направление работы команды Центра дизайна Ferrari над обликом новой модели
+                    было обусловлено в первую очередь требованиями к аэродинамической эффективности.
+                    Дизайнеры использовали инновационные технические решения,
+                    такие как воздуховод S-Duct в передней части, как способ сделать переднюю часть автомобиля
+                    визуально короче, создав оригинальный эффект парящего крыла.
+                    Черная П-образная кромка переднего бампера и боковые поверхности напоминают
+                    о выразительных аэродинамических мотивах нижней части кузова модели 488 GTE.
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function HideOverlayMenu() {
+            $('.close-hamburger').css('display', 'none');
+            $('.open-hamburger').css('display', 'block');
+            $('.overlay-menu').css('display', 'none');
+        }
+
+        function ShowOverlayMenu() {
+            $('.overlay-menu').css('display', 'flex');
+            $('.open-hamburger').css('display', 'none');
+            $('.close-hamburger').css('display', 'block');
+        }
+    </script>
+</body>
+
 </html>
